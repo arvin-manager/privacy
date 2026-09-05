@@ -2,6 +2,8 @@
 
 **Effective date:** September 5, 2026
 
+**Canonical URL:** https://arvin-manager.github.io/privacy/
+
 This Privacy Policy explains how Privy ("**the App**," "**we**," "**us**") handles information when you use the app. Privy is designed so that your private photos, videos, and files never leave your device — this policy describes exactly what that means and what limited data third-party services (analytics, crash reporting, and advertising) may still collect.
 
 If you have questions about this policy, contact us at **anarvin212@gmail.com**.
@@ -96,7 +98,7 @@ To exercise any rights regarding data we may hold (such as data from crash/analy
 
 ## 10. Changes to This Policy
 
-We may update this Privacy Policy from time to time. Changes will be posted at this same URL with a revised effective date at the top of the page. Continued use of the app after changes take effect constitutes acceptance of the revised policy.
+We may update this Privacy Policy from time to time. Changes will be posted at the canonical URL above with a revised effective date at the top of the page. Continued use of the app after changes take effect constitutes acceptance of the revised policy.
 
 ## 11. Contact Us
 
