@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privy — Encrypted private vault for iPhone</title>
+<meta name="description" content="Privy is an iOS encrypted vault for photos, videos, and files. Content stays on your device, locked with Face ID or a passcode. No account required.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://arvin-manager.github.io/privacy/app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privy — Encrypted private vault for iPhone">
+<meta property="og:description" content="Keep photos, videos, and files in an on-device encrypted Vault. Face ID lock. No account. No cloud copy of your private files.">
+<meta property="og:url" content="https://arvin-manager.github.io/privacy/app/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_Hant_TW">
+<meta name="theme-color" content="#07090c">
+<style>
+  :root {
+    --obsidian: #07090c;
+    --graphite: #0e1218;
+    --panel: #141a22;
+    --ink: #eef3f8;
+    --mist: #9fb0c3;
+    --faint: #5f7085;
+    --jade: #34e0c4;
+    --hairline: #232c38;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--obsidian); color: var(--ink); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  a { color: var(--jade); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header, main, footer { width: min(920px, calc(100% - 40px)); margin: 0 auto; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 0 8px;
+  }
+  .brand { font-weight: 700; letter-spacing: 0.04em; }
+  nav { display: flex; gap: 18px; font-size: 14px; color: var(--mist); }
+  .hero { padding: 56px 0 28px; }
+  .kicker {
+    color: var(--jade); font-size: 12px; letter-spacing: 0.18em;
+    text-transform: uppercase; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.12; margin: 12px 0 16px; }
+  .lede { color: var(--mist); font-size: 18px; max-width: 640px; }
+  .zh { margin-top: 10px; color: var(--mist); font-size: 16px; max-width: 640px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; }
+  .pill {
+    border: 1px solid var(--hairline); background: var(--panel);
+    color: var(--ink); border-radius: 999px; padding: 8px 12px; font-size: 13px;
+  }
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px; padding: 18px 0 10px;
+  }
+  article {
+    background: var(--panel); border: 1px solid var(--hairline);
+    border-radius: 18px; padding: 18px 18px 16px;
+  }
+  article h2 { font-size: 18px; margin: 0 0 8px; }
+  article p { margin: 0; color: var(--mist); font-size: 14.5px; }
+  section { padding: 18px 0 8px; }
+  h3 { font-size: 22px; margin: 28px 0 10px; }
+  .note, .legal { color: var(--mist); font-size: 14.5px; }
+  .legal { font-size: 13.5px; }
+  .box {
+    background: var(--graphite); border: 1px solid var(--hairline);
+    border-radius: 16px; padding: 18px;
+  }
+  footer {
+    padding: 36px 0 48px; color: var(--faint); font-size: 13px;
+    border-top: 1px solid var(--hairline); margin-top: 36px;
+  }
+  footer .links { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 10px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Privy",
+  "alternateName": ["Privy Vault", "隱私庫"],
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "iOS 16 or later",
+  "description": "On-device encrypted vault for photos, videos, and files. Locked with Face ID or a passcode. No account and no cloud copy of Vault content.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isAccessibleForFree": true,
+  "url": "https://arvin-manager.github.io/privacy/app/",
+  "privacyPolicy": "https://arvin-manager.github.io/privacy/",
+  "email": "anarvin212@gmail.com"
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="brand">Privy</div>
+  <nav>
+    <a href="../">Privacy Policy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+    <a href="mailto:anarvin212@gmail.com">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="kicker">iOS private vault</div>
+    <h1>Keep private files on this iPhone, encrypted and locked.</h1>
+    <p class="lede">Privy is an encrypted Vault for photos, videos, and files. Your content stays on the device. There is no Privy account and no cloud copy of Vault files.</p>
+    <p class="zh">隱私庫是本機加密保險箱。照片、影片和檔案只存在這部 iPhone，可用 Face ID 或密碼鎖定。不必註冊帳號。</p>
+    <div class="pills">
+      <span class="pill">On-device AES-256 encryption</span>
+      <span class="pill">Face ID or passcode lock</span>
+      <span class="pill">No account required</span>
+      <span class="pill">本機加密 · 隱私庫</span>
+    </div>
+  </section>
+
+  <section>
+    <h3>What Privy does</h3>
+    <div class="grid">
+      <article>
+        <h2>Encrypted Vault</h2>
+        <p>Photos, videos, and documents are encrypted on the device with AES-256-GCM. Privy cannot see or recover your Vault content.</p>
+      </article>
+      <article>
+        <h2>Lock and auto-lock</h2>
+        <p>Unlock with Face ID, Touch ID, or a passcode. The Vault can lock immediately or after a short timer when you leave the app.</p>
+      </article>
+      <article>
+        <h2>Private camera</h2>
+        <p>Capture photos or video directly into the Vault. Camera access is used only when you choose to shoot or scan a QR code.</p>
+      </article>
+      <article>
+        <h2>Safe Share</h2>
+        <p>Export a privacy-protected copy when you choose. You can remove metadata and add a watermark before sharing.</p>
+      </article>
+      <article>
+        <h2>Private browser</h2>
+        <p>Browse over HTTPS in a non-persistent browser. Bookmarks can be saved in the Vault. Website data is cleared with the session.</p>
+      </article>
+      <article>
+        <h2>Authorized downloads</h2>
+        <p>Save a direct HTTPS file you own or have permission to keep. Privy does not bypass DRM, paywalls, or a website's access controls.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h3>Advertising and purchases</h3>
+    <div class="box">
+      <p class="note">The free app may show a Google AdMob banner. Ads are requested as non-personalized, contextual ads only. Privy does not use App Tracking Transparency or IDFA-based tracking across other apps.</p>
+      <p class="note">Optional Vault Plus features are sold as an auto-renewing Apple subscription. Payment, cancellation, and refunds are handled by Apple through your Apple ID.</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Get the app</h3>
+    <p class="note">Privy is an iOS app. When it is live on the App Store, search for <strong>Privy</strong> (English) or <strong>隱私庫</strong> (Traditional Chinese).</p>
+    <p class="note">This page is the official product and marketing URL for Privy. Use it in App Store Connect and Google Ads / AdMob as the developer website.</p>
+  </section>
+
+  <section>
+    <h3>Contact</h3>
+    <p class="note">Publisher contact: <a href="mailto:anarvin212@gmail.com">anarvin212@gmail.com</a></p>
+    <p class="legal">Legal: <a href="../">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a></p>
+  </section>
+</main>
+<footer>
+  <div class="links">
+    <a href="../">Privacy Policy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+    <a href="mailto:anarvin212@gmail.com">anarvin212@gmail.com</a>
+  </div>
+  <div>© 2026 Privy. All rights reserved.</div>
+</footer>
+</body>
+</html>
