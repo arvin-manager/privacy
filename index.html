@@ -30,103 +30,184 @@
 <body>
 
 <p class="meta"><a href="app/">Privy product page</a></p>
-<h1>Privacy Policy for Privy</h1>
+
+<h1 id="privacy-policy-for-privy">Privacy Policy for Privy</h1>
+
 <p class="meta"><strong>Effective date:</strong> September 30, 2026</p>
 
-<p>This Privacy Policy explains how Privy ("<strong>the App</strong>," "<strong>we</strong>," "<strong>us</strong>") handles information when you use the app. Privy is designed so that your private photos, videos, and files never leave your device — this policy describes exactly what that means and what limited data third-party services (analytics, crash reporting, and advertising) may still collect.</p>
+<p class="meta"><strong>Canonical URL:</strong> https://arvin-manager.github.io/privacy/</p>
+
+<p>This Privacy Policy explains how Privy ("<strong>the App</strong>," "<strong>we</strong>," "<strong>us</strong>") handles information when you use the app. Privy stores your Vault content on your device and does not upload it to us. You control whether to export or share a copy. This policy also describes on-device face detection and the limited data third-party services (analytics, crash reporting, and advertising) may process.</p>
 
 <p>If you have questions about this policy, contact us at <strong>anarvin212@gmail.com</strong>.</p>
 
 <hr>
 
-<h2>1. Summary</h2>
+<h2 id="1-summary">1. Summary</h2>
+
 <ul>
-  <li>Privy stores your Vault content (photos, videos, files) <strong>only on your device</strong>, encrypted with AES‑256‑GCM. We do not upload it to our servers or to any cloud service, and we cannot see, access, or recover it.</li>
+
+  <li>Privy stores your Vault content (photos, videos, files) <strong>on your device</strong>, encrypted with AES‑256‑GCM at rest. Local working copies are used for viewing, processing, and export. We do not upload your Vault content to our servers or to a cloud service. You may choose to export or share a copy, as explained in Sections 4.1.3 and 6.</li>
+
   <li>There is no user account, sign-up, or login. We do not collect your name, email address, or any other identity information.</li>
+
   <li>Your app passcode, gesture pattern, and encryption keys are stored in the device's <strong>Keychain</strong> and never leave your device.</li>
+
   <li>We do <strong>not</strong> use Apple's App Tracking Transparency (ATT) framework, and we do not track you across other companies' apps or websites.</li>
+
   <li>Some optional, industry-standard third-party services (crash reporting, analytics, and non-personalized advertising) may be active depending on your build/region, as described in Section 5.</li>
+
 </ul>
 
-<h2>2. Information We Do Not Collect</h2>
+<h2 id="2-information-we-do-not-collect">2. Information We Do Not Collect</h2>
+
 <p>Privy does not require an account and has no server-side backend for your content. Specifically, we do <strong>not</strong>:</p>
+
 <ul>
+
   <li>Collect or store your Vault photos, videos, files, notes, or tags on any server</li>
+
   <li>Sync your Vault content to iCloud or any other cloud service</li>
+
   <li>Collect your name, email address, phone number, or physical address</li>
+
   <li>Sell your personal information to anyone</li>
+
 </ul>
+
 <p>Some files you view from an on-device source that is itself synced to iCloud (for example, a Photos library asset) may require that file to download from iCloud before Privy can read it. That download is handled entirely by iOS/Apple's frameworks — Privy never transmits the file anywhere else.</p>
 
-<h2>3. Information Stored on Your Device</h2>
-<p>To provide the app's core functionality, Privy stores the following data <strong>locally on your device only</strong>:</p>
-<table>
-  <tr><th>Data</th><th>Where it's stored</th><th>Purpose</th></tr>
-  <tr><td>Vault photos, videos, and files</td><td>App's local container, encrypted with AES‑256‑GCM</td><td>The core "private vault" feature</td></tr>
-  <tr><td>App passcode / gesture pattern (salted, hashed)</td><td>iOS Keychain / on-device storage</td><td>Unlocking the app</td></tr>
-  <tr><td>Encryption master key</td><td>iOS Keychain (<code>WhenUnlockedThisDeviceOnly</code>)</td><td>Encrypting/decrypting your Vault content</td></tr>
-  <tr><td>App preferences (auto-lock timer, theme, etc.)</td><td>On-device app storage</td><td>Remembering your settings</td></tr>
-</table>
-<p>None of the data in this table is ever sent to us or to any third party. If you delete the app, this data is deleted with it.</p>
+<h2 id="3-information-stored-on-your-device">3. Information Stored on Your Device</h2>
 
-<h2>4. Permissions the App Requests</h2>
+<p>To provide the app's core functionality, Privy stores the following data <strong>locally on your device only</strong>:</p>
+
+<table>
+
+  <tr><th>Data</th><th>Where it's stored</th><th>Purpose</th></tr>
+
+  <tr><td>Vault photos, videos, and files</td><td>App's local container, encrypted with AES‑256‑GCM</td><td>The core "private vault" feature</td></tr>
+
+  <tr><td>App passcode / gesture pattern (salted, hashed)</td><td>iOS Keychain / on-device storage</td><td>Unlocking the app</td></tr>
+
+  <tr><td>Encryption master key</td><td>iOS Keychain (<code>WhenUnlockedThisDeviceOnly</code>)</td><td>Encrypting/decrypting your Vault content</td></tr>
+
+  <tr><td>App preferences (auto-lock timer, theme, etc.)</td><td>On-device app storage</td><td>Remembering your settings</td></tr>
+
+</table>
+
+<p>Privy does not send the data in this table to us or to analytics or advertising providers. If you choose to export or share content, the selected destination receives the copy you choose. Viewing, editing, and sharing may create decrypted local working copies in the app's cache or temporary storage. Deleting the app (rather than offloading it) removes its local container; Keychain entries are managed separately by iOS and may remain after uninstallation. See Section 7 for retention and deletion details.</p>
+
+<h2 id="4-permissions-the-app-requests">4. Permissions the App Requests</h2>
+
 <p>Privy will ask for the following device permissions only when a feature that needs them is used. You can grant or deny each independently in iOS Settings.</p>
+
 <ul>
+
   <li><strong>Face ID / Biometrics</strong> — to unlock the app and your Vault using Face ID or Touch ID instead of (or in addition to) a passcode. Biometric data is processed entirely by iOS and is never accessible to Privy or to us.</li>
+
   <li><strong>Camera and Microphone</strong> — to let you capture photos and video directly into your Vault using the in-app camera.</li>
+
   <li><strong>Photo Library</strong> — to let you import existing photos/videos into your Vault, and to let you save Vault content back out to your Photos library when you choose to export it.</li>
+
 </ul>
 
+<h2 id="face-data">4.1 Face Data</h2>
 
-<h2>Face Data</h2>
-<p>Privy does not collect biometric face data, faceprints, face templates, or facial-recognition identifiers, and it does not attempt to identify any person.</p>
-<p><strong>Face ID and Touch ID.</strong> Unlocking with Face ID or Touch ID is performed entirely by iOS. Privy receives only a success or failure result from the system authentication prompt. Privy never receives, stores, or can access your face image, face geometry, or biometric template. That information remains under Apple's control in the Secure Enclave. It is not shared with us or with any third party, and Privy does not retain it.</p>
-<p><strong>On-device face rectangles for optional privacy copies.</strong> When you save a video in the Vault, or when you choose "Blur detected faces" or "Mosaic detected faces" while creating a privacy copy, Privy uses Apple's Vision framework on this device to find rectangular regions that may contain a face. The only derived information kept is a list of timestamps and rectangle coordinates (position and size within the frame), together with the video duration and display size needed to place a blur or mosaic. Privy does not create a face image, face embedding, identity, or name from this process, and it does not perform facial recognition.</p>
-<p>If that rectangle list is saved, it is encrypted on the device with the same AES-256-GCM Vault key and stored only in the app's local container. It is not uploaded to our servers, not synced to any cloud service, and not shared with Firebase, Google AdMob, or any other third party. It is deleted when you delete the corresponding Vault item. Deleting the app deletes it with the rest of the app's local data. A photo blur is applied in memory to the copy you choose to share and is not kept as a separate face database.</p>
-<p>Photos and videos you choose to keep in the Vault may themselves show people. Those files are encrypted Vault content stored only on your device, as described in Section 3. They are not sent to us for face analysis.</p>
+<h3 id="face-data-purpose">4.1.1 Data Processed and Purpose</h3>
 
-<h2>5. Third-Party Services</h2>
+<p>Privy processes photos and videos that you choose to import or capture; these files may contain visible faces. For face blur or mosaic, Apple's Vision framework runs on your device to detect face rectangles and, for videos, track their positions between frames. Privy may automatically precompute and cache these positions after a supported video is saved or the Vault is reopened, before you select a face effect. Photo detection runs when you enable "Blur detected faces"; video detection can also run when you select "Mosaic detected faces" if a suitable cache is unavailable.</p>
+
+<p>The stored video detection data consists of frame timestamps and rectangle coordinates (position and size), video duration, display dimensions, and an algorithm version. Its only purpose is to position a blur or mosaic in a privacy copy and avoid repeating video analysis. Privy does not create or store separate face crops, faceprints, biometric templates, face embeddings, names, identities, or facial-recognition identifiers. It does not identify people, infer personal attributes, or use face data for advertising, profiling, or model training.</p>
+
+<h3 id="face-data-biometrics">4.1.2 Face ID and Touch ID</h3>
+
+<p>Face ID and Touch ID unlocking use Apple's LocalAuthentication framework. Privy receives an authentication success or failure result and may receive a system error; it does not receive the biometric face image, face geometry, fingerprint, or biometric template. Apple manages biometric authentication, and its biometric templates are protected by the Secure Enclave. Privy does not collect, store, retain, or share Face ID or Touch ID biometric data.</p>
+
+<h3 id="face-data-storage-sharing">4.1.3 Storage, Disclosure, and Sharing</h3>
+
+<p>Video face-detection caches are encrypted with the Vault's AES-256-GCM key and stored in the app's local Vault container on your device, with iOS file protection. The Vault directory containing these caches is excluded from device backups. The caches are not uploaded to us, synced to iCloud or another cloud service, or provided to Firebase, Google AdMob, or any other third party. Face analysis runs locally through Apple's frameworks and does not send the media to Apple for analysis.</p>
+
+<p>Photos and videos containing faces remain user-selected Vault content. If you explicitly export or share an original or a processed copy through the system share sheet or save it to Photos, that media copy is sent to the destination you choose and may still contain visible faces. Privy does not include the separate face-detection cache with that copy. The destination's storage, sharing, and retention practices apply; for example, your Photos settings may sync an exported copy to iCloud Photos.</p>
+
+<h3 id="face-data-retention-deletion">4.1.4 Retention and Deletion</h3>
+
+<p>Video face-detection caches have no separate fixed expiry while their associated video remains in the Vault. Moving a video to "Recently Deleted" retains the video and its encrypted face-detection cache for recovery. You can permanently delete it sooner from "Recently Deleted". Items become eligible for automatic permanent deletion after 30 days, and the app performs that cleanup when the corresponding Vault is next opened or unlocked. Permanent deletion removes the corresponding face-detection cache together with the video; if local file removal fails, the app retries cleanup when that Vault is reopened. Deleting the app, rather than offloading it, removes the local container containing these caches. Keychain entries are separate and contain no face-detection data.</p>
+
+<h3 id="face-data-temporary-copies">4.1.5 Photo Detection and Temporary Copies</h3>
+
+<p>Photo face rectangles are used in memory for processing and are not saved as a separate face-detection database. Local temporary media and processed copies can contain faces. The privacy editors remove their prepared share files when those files are dismissed or cleaned up; leftover Safe Share output files older than 24 hours are eligible for cleanup on the next app launch. This is not a guarantee of deletion exactly 24 hours after creation. Copies you save or share outside Privy are retained by the destination until you delete them there.</p>
+
+<h2 id="5-third-party-services">5. Third-Party Services</h2>
+
 <p>Privy uses a small number of third-party SDKs that are standard for app development, crash diagnostics, and advertising. These providers may process limited technical/device data as described below — <strong>never your Vault content</strong>.</p>
 
-<h3>5.1 Crash Reporting &amp; Analytics (Firebase, Google LLC)</h3>
-<p>If enabled for your build, Privy uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to understand app usage (e.g., screen views, app opens) and to diagnose crashes. This may include device model, OS version, app version, coarse usage events, and crash logs. Firebase never receives your Vault filenames, file contents, passcodes, patterns, or decrypted media.</p>
+<h3 id="5-1-crash-reporting-analytics-feature-configuration-firebase-google-llc">5.1 Crash Reporting, Analytics &amp; Feature Configuration (Firebase, Google LLC)</h3>
+
+<p>If enabled for your build, Privy uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to understand app usage (e.g., screen views, app opens) and to diagnose crashes. Privy also uses <strong>Firebase Remote Config</strong> to receive operational availability settings for disclosed app features. Firebase may process a Firebase installation identifier, device model, OS version, app version, coarse usage events, and crash logs. Remote Config receives no Vault filenames, source URLs, file contents, passcodes, patterns, tags, or decrypted media.</p>
+
 <p>Learn more: <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> · <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing terms</a></p>
 
-<h3>5.2 Advertising (Google AdMob)</h3>
-<p>Privy may display a banner ad provided by <strong>Google AdMob</strong>. Two important points:</p>
+<h3 id="5-2-advertising-google-admob">5.2 Advertising (Google AdMob)</h3>
+
+<p>Privy may display banner, interstitial, or rewarded interstitial ads provided by <strong>Google AdMob</strong>. Two important points:</p>
+
 <ul>
+
   <li><strong>We do not request App Tracking Transparency (ATT) permission, and we do not use IDFA-based tracking.</strong> Ads are requested as <strong>non-personalized/contextual ads only</strong> (the ad request explicitly sets <code>npa=1</code>), meaning ads are not personalized using your activity in other companies' apps or websites.</li>
+
   <li>Before any ad is requested, Privy uses Google's <strong>User Messaging Platform (UMP)</strong> to determine and, where legally required (e.g., in the EEA/UK), present a consent form for applicable privacy regulations (GDPR).</li>
+
 </ul>
+
 <p>Learn more: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites and apps that use our services</a> · <a href="https://support.google.com/admob/answer/6128543">AdMob data disclosure</a></p>
 
-<h3>5.3 In-App Purchases (Apple StoreKit)</h3>
+<h3 id="5-3-in-app-purchases-apple-storekit">5.3 In-App Purchases (Apple StoreKit)</h3>
+
 <p>If Privy offers a subscription or one-time purchase, all payment processing is handled entirely by <strong>Apple</strong> through StoreKit. Privy receives only a purchase/entitlement status from Apple — we never see or store your payment card details, billing address, or Apple ID.</p>
 
-<h2>6. Networking</h2>
-<p>Privy makes network requests only in these cases:</p>
+<h2 id="6-networking">6. Networking</h2>
+
+<p>Privy makes network requests for these functions:</p>
+
 <ul>
+
+  <li><strong>Browsing and opening links</strong> — the private browser loads websites and their resources. The websites you visit receive normal web requests, including your IP address, requested URLs, and information you submit to them. The browser uses a non-persistent website data store, which does not prevent websites from receiving these requests.</li>
+
   <li><strong>Downloading a file you provide a link for</strong> — if you choose to import media from a URL (e.g., a video link) into your Vault, the app downloads that file directly from the source you specified using a secure (HTTPS) connection.</li>
+
+  <li><strong>User-directed export or sharing</strong> — a destination you choose may transfer your selected media using its own services. Privy does not upload the separate face-detection cache.</li>
+
+  <li><strong>Apple purchase services</strong>, which verify purchases and subscription entitlements through StoreKit.</li>
+
   <li><strong>The third-party SDKs described in Section 5</strong>, which may make their own network calls to their respective providers (Google/Firebase) for the purposes described above.</li>
+
 </ul>
-<p>Privy does not run its own backend server and does not transmit your Vault content over the network under any circumstance.</p>
 
-<h2>7. Data Retention &amp; Deletion</h2>
-<p>All Vault content and app data live on your device. You can delete individual items within the app at any time, and deleting the app removes all locally stored data, including your encryption keys and Keychain entries, permanently.</p>
+<p>Privy does not run a backend for Vault content and does not automatically upload that content or face-detection caches. Exporting or sharing a copy is under your control.</p>
 
-<h2>8. Children's Privacy</h2>
-<p>Privy is not directed at children under 13, and we do not knowingly collect personal information from children. The advertising consent flow described in Section 5.2 treats all users as not exempt from age-of-consent requirements.</p>
+<h2 id="retention-deletion">7. Data Retention &amp; Deletion</h2>
 
-<h2>9. Your Rights</h2>
+<p>Vault content and associated video face-detection caches stay on your device while you keep the item. Ordinary deletion moves items to "Recently Deleted" for recovery. You can permanently delete them there at any time. After 30 days, they are eligible for automatic permanent deletion when the corresponding Vault is next opened or unlocked. Failed local file deletions are retried when that Vault is reopened. Sections 4.1.4 and 4.1.5 explain face-detection and temporary-copy retention.</p>
+
+<p>Deleting the app (rather than offloading it) removes its local container, including Vault content and face-detection caches. iOS Keychain entries, such as encryption keys and credential hashes, may persist after uninstallation; these entries contain no face images, face rectangles, or biometric templates. Uninstallation does not delete originals in Photos, previously exported or shared copies, or records retained by third-party services. Those services apply their own retention policies, linked in Section 5.</p>
+
+<h2 id="8-children-s-privacy">8. Children's Privacy</h2>
+
+<p>Privy is not directed at children under 13, and we do not knowingly collect personal information from children. Applicable advertising consent requests are handled through the consent flow described in Section 5.2.</p>
+
+<h2 id="9-your-rights">9. Your Rights</h2>
+
 <p>Depending on where you live (e.g., under GDPR in the EEA/UK or CCPA/CPRA in California), you may have rights to access, correct, delete, or restrict processing of personal data held about you. Because Privy stores your Vault content only on your device and we hold no account or content data on our servers, most such requests can be satisfied by deleting content within the app or deleting the app itself. For questions about data processed by the third-party services in Section 5, you may also contact Google directly using the links provided there.</p>
+
 <p>To exercise any rights regarding data we may hold (such as data from crash/analytics SDKs), contact us at <strong>anarvin212@gmail.com</strong>.</p>
 
-<h2>10. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be posted at this same page with a revised effective date at the top. Continued use of the app after changes take effect constitutes acceptance of the revised policy.</p>
+<h2 id="10-changes-to-this-policy">10. Changes to This Policy</h2>
 
-<h2>11. Contact Us</h2>
-<p><strong>Privy</strong><br>
-Email: <strong>anarvin212@gmail.com</strong></p>
+<p>We may update this Privacy Policy from time to time. Changes will be posted at the canonical URL above with a revised effective date at the top of the page. Continued use of the app after changes take effect constitutes acceptance of the revised policy.</p>
+
+<h2 id="11-contact-us">11. Contact Us</h2>
+
+<p><strong>Privy</strong> Email: <strong>anarvin212@gmail.com</strong></p>
 
 </body>
 </html>
