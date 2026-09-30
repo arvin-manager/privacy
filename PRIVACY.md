@@ -1,6 +1,6 @@
 # Privacy Policy for Privy
 
-**Effective date:** September 5, 2026
+**Effective date:** September 30, 2026
 
 **Canonical URL:** https://arvin-manager.github.io/privacy/
 
@@ -50,13 +50,26 @@ Privy will ask for the following device permissions only when a feature that nee
 - **Camera and Microphone** — to let you capture photos and video directly into your Vault using the in-app camera.
 - **Photo Library** — to let you import existing photos/videos into your Vault, and to let you save Vault content back out to your Photos library when you choose to export it.
 
+
+## Face Data
+
+Privy does not collect biometric face data, faceprints, face templates, or facial-recognition identifiers, and it does not attempt to identify any person.
+
+**Face ID and Touch ID.** Unlocking with Face ID or Touch ID is performed entirely by iOS. Privy receives only a success or failure result from the system authentication prompt. Privy never receives, stores, or can access your face image, face geometry, or biometric template. That information remains under Apple's control in the Secure Enclave. It is not shared with us or with any third party, and Privy does not retain it.
+
+**On-device face rectangles for optional privacy copies.** When you save a video in the Vault, or when you choose "Blur detected faces" or "Mosaic detected faces" while creating a privacy copy, Privy uses Apple's Vision framework on this device to find rectangular regions that may contain a face. The only derived information kept is a list of timestamps and rectangle coordinates (position and size within the frame), together with the video duration and display size needed to place a blur or mosaic. Privy does not create a face image, face embedding, identity, or name from this process, and it does not perform facial recognition.
+
+If that rectangle list is saved, it is encrypted on the device with the same AES-256-GCM Vault key and stored only in the app's local container. It is not uploaded to our servers, not synced to any cloud service, and not shared with Firebase, Google AdMob, or any other third party. It is deleted when you delete the corresponding Vault item. Deleting the app deletes it with the rest of the app's local data. A photo blur is applied in memory to the copy you choose to share and is not kept as a separate face database.
+
+Photos and videos you choose to keep in the Vault may themselves show people. Those files are encrypted Vault content stored only on your device, as described in Section 3. They are not sent to us for face analysis.
+
 ## 5. Third-Party Services
 
 Privy uses a small number of third-party SDKs that are standard for app development, crash diagnostics, and advertising. These providers may process limited technical/device data as described below — **never your Vault content**.
 
-### 5.1 Crash Reporting & Analytics (Firebase, Google LLC)
+### 5.1 Crash Reporting, Analytics & Feature Configuration (Firebase, Google LLC)
 
-If enabled for your build, Privy uses **Firebase Analytics** and **Firebase Crashlytics** to understand app usage (e.g., screen views, app opens) and to diagnose crashes. This may include device model, OS version, app version, coarse usage events, and crash logs. Firebase never receives your Vault filenames, file contents, passcodes, patterns, or decrypted media.
+If enabled for your build, Privy uses **Firebase Analytics** and **Firebase Crashlytics** to understand app usage (e.g., screen views, app opens) and to diagnose crashes. Privy also uses **Firebase Remote Config** to receive operational availability settings for disclosed app features. Firebase may process a Firebase installation identifier, device model, OS version, app version, coarse usage events, and crash logs. Remote Config receives no Vault filenames, source URLs, file contents, passcodes, patterns, tags, or decrypted media.
 
 Learn more: [Google's Privacy Policy](https://policies.google.com/privacy) · [Firebase data processing terms](https://firebase.google.com/terms/data-processing-terms)
 
