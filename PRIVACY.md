@@ -44,7 +44,7 @@ Privy does not send the data in this table to us or to analytics or advertising 
 
 ## 4. Permissions the App Requests
 
-Privy will ask for the following device permissions only when a feature that needs them is used. You can grant or deny each independently in iOS Settings.
+Privy will ask for the following device permissions only when a feature that needs them is used. Photo import uses the iOS picker without requiring broad library access; library read/write access is requested if you choose to delete originals, and add-only access may be requested when saving a copy to Photos. You can grant or deny each independently in iOS Settings.
 
 - **Face ID / Biometrics** — to unlock the app and your Vault using Face ID or Touch ID instead of (or in addition to) a passcode. Biometric data is processed entirely by iOS and is never accessible to Privy or to us.
 - **Camera and Microphone** — to let you capture photos and video directly into your Vault using the in-app camera.
@@ -77,6 +77,9 @@ Video face-detection caches have no separate fixed expiry while their associated
 
 Photo face rectangles are used in memory for processing and are not saved as a separate face-detection database. Local temporary media and processed copies can contain faces. The privacy editors remove their prepared share files when those files are dismissed or cleaned up; leftover Safe Share output files older than 24 hours are eligible for cleanup on the next app launch. This is not a guarantee of deletion exactly 24 hours after creation. Copies you save or share outside Privy are retained by the destination until you delete them there.
 
+Files received through the iOS share extension wait in an on-device App Group inbox protected by iOS file protection and excluded from device backups. They are working copies and are not yet encrypted with the Vault's AES-256-GCM key until you confirm import. Pending requests become eligible for removal after 7 days; Privy checks for expiry when the app is opened or the share extension prepares another transfer. An item currently being reviewed in the app is kept until that review finishes. Unreferenced transfer folders left by an interrupted share become eligible for cleanup after 24 hours. Successful import or cancelling an incoming review removes its pending copy. Cleanup failures are retried at a later cleanup opportunity. These actions do not delete source-app originals or already imported Vault items.
+
+
 ## 5. Third-Party Services
 
 Privy uses a small number of third-party SDKs that are standard for app development, crash diagnostics, and advertising. These providers may process limited technical/device data as described below — **never your Vault content**.
@@ -92,7 +95,7 @@ Learn more: [Google's Privacy Policy](https://policies.google.com/privacy) · [F
 Privy may display banner, interstitial, or rewarded interstitial ads provided by **Google AdMob**. Two important points:
 
 - **We do not request App Tracking Transparency (ATT) permission, and we do not use IDFA-based tracking.** Ads are requested as **non-personalized/contextual ads only** (the ad request explicitly sets `npa=1`), meaning ads are not personalized using your activity in other companies' apps or websites.
-- Before any ad is requested, Privy uses Google's **User Messaging Platform (UMP)** to determine and, where legally required (e.g., in the EEA/UK), present a consent form for applicable privacy regulations (GDPR).
+- Before any ad is requested, Privy uses Google's **User Messaging Platform (UMP)** to determine and, where legally required (e.g., in the EEA/UK), present a consent form for applicable privacy regulations (GDPR). When UMP requires a privacy-options entry point, Settings displays **Advertising Privacy Options** so you can review or change your advertising privacy choices. Changing these choices discards cached ads; subsequent requests follow the updated UMP state.
 
 Learn more: [How Google uses information from sites and apps that use our services](https://policies.google.com/technologies/partner-sites) · [AdMob data disclosure](https://support.google.com/admob/answer/6128543)
 

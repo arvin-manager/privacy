@@ -99,7 +99,7 @@
 
 <h2 id="4-permissions-the-app-requests">4. Permissions the App Requests</h2>
 
-<p>Privy will ask for the following device permissions only when a feature that needs them is used. You can grant or deny each independently in iOS Settings.</p>
+<p>Privy will ask for the following device permissions only when a feature that needs them is used. Photo import uses the iOS picker without requiring broad library access; library read/write access is requested if you choose to delete originals, and add-only access may be requested when saving a copy to Photos. You can grant or deny each independently in iOS Settings.</p>
 
 <ul>
 
@@ -137,6 +137,8 @@
 
 <p>Photo face rectangles are used in memory for processing and are not saved as a separate face-detection database. Local temporary media and processed copies can contain faces. The privacy editors remove their prepared share files when those files are dismissed or cleaned up; leftover Safe Share output files older than 24 hours are eligible for cleanup on the next app launch. This is not a guarantee of deletion exactly 24 hours after creation. Copies you save or share outside Privy are retained by the destination until you delete them there.</p>
 
+<p>Files received through the iOS share extension wait in an on-device App Group inbox protected by iOS file protection and excluded from device backups. They are working copies and are not yet encrypted with the Vault's AES-256-GCM key until you confirm import. Pending requests become eligible for removal after 7 days; Privy checks for expiry when the app is opened or the share extension prepares another transfer. An item currently being reviewed in the app is kept until that review finishes. Unreferenced transfer folders left by an interrupted share become eligible for cleanup after 24 hours. Successful import or cancelling an incoming review removes its pending copy. Cleanup failures are retried at a later cleanup opportunity. These actions do not delete source-app originals or already imported Vault items.</p>
+
 <h2 id="5-third-party-services">5. Third-Party Services</h2>
 
 <p>Privy uses a small number of third-party SDKs that are standard for app development, crash diagnostics, and advertising. These providers may process limited technical/device data as described below — <strong>never your Vault content</strong>.</p>
@@ -155,7 +157,7 @@
 
   <li><strong>We do not request App Tracking Transparency (ATT) permission, and we do not use IDFA-based tracking.</strong> Ads are requested as <strong>non-personalized/contextual ads only</strong> (the ad request explicitly sets <code>npa=1</code>), meaning ads are not personalized using your activity in other companies' apps or websites.</li>
 
-  <li>Before any ad is requested, Privy uses Google's <strong>User Messaging Platform (UMP)</strong> to determine and, where legally required (e.g., in the EEA/UK), present a consent form for applicable privacy regulations (GDPR).</li>
+  <li>Before any ad is requested, Privy uses Google's <strong>User Messaging Platform (UMP)</strong> to determine and, where legally required (e.g., in the EEA/UK), present a consent form for applicable privacy regulations (GDPR). When UMP requires a privacy-options entry point, Settings displays <strong>Advertising Privacy Options</strong> so you can review or change your advertising privacy choices. Changing these choices discards cached ads; subsequent requests follow the updated UMP state.</li>
 
 </ul>
 
