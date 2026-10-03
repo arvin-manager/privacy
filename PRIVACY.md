@@ -1,6 +1,6 @@
 # Privacy Policy for Privy
 
-**Effective date:** September 30, 2026
+**Effective date:** October 3, 2026
 
 **Canonical URL:** https://arvin-manager.github.io/privacy/
 
@@ -105,7 +105,7 @@ If Privy offers a subscription or one-time purchase, all payment processing is h
 Privy makes network requests for these functions:
 
 - **Browsing and opening links** — the private browser loads websites and their resources. The websites you visit receive normal web requests, including your IP address, requested URLs, and information you submit to them. The browser uses a non-persistent website data store, which does not prevent websites from receiving these requests.
-- **Downloading a file you provide a link for** — if you choose to import media from a URL (e.g., a video link) into your Vault, the app downloads that file directly from the source you specified using a secure (HTTPS) connection.
+- **Downloading a file you provide a link for** — if you choose to download a PDF document into your Vault, the app retrieves it directly from the source you specified using a secure (HTTPS) connection. Network downloads are limited to PDF documents; Privy does not offer audio or video downloading. You can still import your own photos, videos, and other files through the iOS Photos or Files picker.
 - **User-directed export or sharing** — a destination you choose may transfer your selected media using its own services. Privy does not upload the separate face-detection cache.
 - **Apple purchase services**, which verify purchases and subscription entitlements through StoreKit.
 - **The third-party SDKs described in Section 5**, which may make their own network calls to their respective providers (Google/Firebase) for the purposes described above.
