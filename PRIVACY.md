@@ -1,6 +1,6 @@
 # Privacy Policy for Privy
 
-**Effective date:** October 3, 2026
+**Effective date:** October 6, 2026
 
 **Canonical URL:** https://arvin-manager.github.io/privacy/
 
@@ -86,7 +86,7 @@ Privy uses a small number of third-party SDKs that are standard for app developm
 
 ### 5.1 Crash Reporting, Analytics & Feature Configuration (Firebase, Google LLC)
 
-If enabled for your build, Privy uses **Firebase Analytics** and **Firebase Crashlytics** to understand app usage (e.g., screen views, app opens) and to diagnose crashes. Privy also uses **Firebase Remote Config** to receive operational availability settings for disclosed app features. Firebase may process a Firebase installation identifier, device model, OS version, app version, coarse usage events, and crash logs. Remote Config receives no Vault filenames, source URLs, file contents, passcodes, patterns, tags, or decrypted media.
+If enabled for your build, Privy uses **Firebase Analytics** and **Firebase Crashlytics** to understand app usage (e.g., screen views, app opens) and to diagnose crashes. Privy also uses **Firebase Remote Config** to receive operational availability settings for disclosed app features. Firebase Analytics may process app-instance and vendor identifiers, coarse location inferred from masked IP addresses, app lifecycle and screen-interaction events, and StoreKit purchase/subscription events, including product identifiers, names, and prices. We use these data to understand app usage and feature performance. Firebase Crashlytics may process crash reports, stack traces, application state, device/OS information, and other diagnostic information to diagnose and reduce crashes. Firebase Remote Config may process country/language codes, time zone, OS/app information, and installation information to provide operational app settings. Some analytics data are associated with app or device identifiers; Privy does not require an account or provide names, contact details, or Vault content to these services. Remote Config receives no Vault filenames, source URLs, file contents, passcodes, patterns, tags, or decrypted media.
 
 Learn more: [Google's Privacy Policy](https://policies.google.com/privacy) · [Firebase data processing terms](https://firebase.google.com/terms/data-processing-terms)
 
@@ -98,6 +98,8 @@ Privy may display banner, interstitial, or rewarded interstitial ads provided by
 - Before any ad is requested, Privy uses Google's **User Messaging Platform (UMP)** to determine and, where legally required (e.g., in the EEA/UK), present a consent form for applicable privacy regulations (GDPR). When UMP requires a privacy-options entry point, Settings displays **Advertising Privacy Options** so you can review or change your advertising privacy choices. Changing these choices discards cached ads; subsequent requests follow the updated UMP state.
 
 Learn more: [How Google uses information from sites and apps that use our services](https://policies.google.com/technologies/partner-sites) · [AdMob data disclosure](https://support.google.com/admob/answer/6128543)
+
+Google Mobile Ads and User Messaging Platform may process IP-derived coarse location, app/device identifiers, ad impressions and interaction events, and performance/diagnostic information. These data support non-personalized advertising, analytics, fraud prevention, and regional consent management. Some advertising data are associated with app or device identifiers. Privy does not request precise location. We do not share Vault content, filenames, browsed/downloaded URLs, passcodes, patterns, or tags with these services.
 
 ### 5.3 In-App Purchases (Apple StoreKit)
 

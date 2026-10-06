@@ -16,6 +16,8 @@ Privy lets you store photos, videos, and files in an encrypted, on-device Vault 
 
 You may only store, download, or share content that you own or are otherwise authorized to store, download, or share. You are solely responsible for the legality of the content you keep in your Vault or access through the App's browser and download features. You agree not to use the App to store, process, or distribute illegal content, or to violate the rights of any third party.
 
+Privy's network download feature supports PDF documents only, from sources the user owns or has explicit permission to save. Network audio/video downloading is not offered. It must not be used to download copyrighted streams from third-party media services, bypass digital rights management (DRM), authentication, paywalls, regional restrictions, or any website's technical access controls. When a service provides its own authorized offline feature, users must use that official feature instead.
+
 ## 3. Your Responsibility for Data
 
 Vault content is encrypted and stored only on your device. We do not maintain backups or copies. You are responsible for keeping your device, passcode, and Face ID/biometric enrollment secure. If you forget your passcode, delete the App, or your device is lost, damaged, or reset, your Vault content may become permanently unrecoverable — this is expected behavior of on-device encryption, not a malfunction.
