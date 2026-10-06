@@ -90,6 +90,8 @@ If enabled for your build, Privy uses **Firebase Analytics** and **Firebase Cras
 
 Learn more: [Google's Privacy Policy](https://policies.google.com/privacy) · [Firebase data processing terms](https://firebase.google.com/terms/data-processing-terms)
 
+Privy keeps app analytics enabled but sets advertising storage, advertising user-data processing, and ad personalization consent to denied. The Analytics dependency excludes IDFA support. These controls restrict advertising and remarketing use of new app data; they do not erase historical data already held by providers.
+
 ### 5.2 Advertising (Google AdMob)
 
 Privy may display banner, interstitial, or rewarded interstitial ads provided by **Google AdMob**. Two important points:
